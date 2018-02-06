@@ -9,5 +9,7 @@
         void SendMessage(object message);
 
         void Info(string message);
+
+        void Warn(string message);
     }
 }

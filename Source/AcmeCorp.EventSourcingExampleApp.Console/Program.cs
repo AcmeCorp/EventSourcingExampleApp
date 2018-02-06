@@ -47,10 +47,6 @@
             applicationLogger.SendMessage(confirmOrderV1);
             bus.Send(confirmOrderV1);
 
-            Console.WriteLine();
-            Console.WriteLine("End.");
-            Console.WriteLine();
-            Console.WriteLine("Press any key to exit.");
             Console.ReadLine();
         }
     }

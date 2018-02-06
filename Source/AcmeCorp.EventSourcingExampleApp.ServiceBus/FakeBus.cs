@@ -1,6 +1,7 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.ServiceBus
 {
     using System;
+    using System.Threading;
     using AcmeCorp.EventSourcing;
     using AcmeCorp.EventSourcing.Logging;
     using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Commands;
@@ -20,6 +21,7 @@
     /// </remarks>
     public class FakeBus : IBus
     {
+        private const int SleepTime = 1000;
         private readonly ILogger logger;
         private readonly IApplicationLogger applicationLogger;
         private readonly IOrderAggregateFactory orderAggregateFactory;
@@ -48,6 +50,7 @@
             {
                 IHandleMessage<IOrderAcceptedV1> fulfillmentOrderAcceptedHandler = new Fulfillment.MessageHandlers.OrderAcceptedV1Handler(this.CreateDomainRepository(), this.deliveryAggregateFactory, this.applicationLogger);
                 fulfillmentOrderAcceptedHandler.Handle(orderAcceptedV1);
+                Thread.Sleep(SleepTime);
                 IHandleMessage<IOrderAcceptedV1> paymentsOrderAcceptedHandler = new Payments.MessageHandlers.OrderAcceptedV1Handler(this, this.paymentsDataStore, this.applicationLogger);
                 paymentsOrderAcceptedHandler.Handle(orderAcceptedV1);
             }
@@ -55,37 +58,28 @@
             {
                 IHandleMessage<IOrderFulfilledV1> ordersOrderFulfilledHandler = new Orders.MessageHandlers.OrderFulfilledV1Handler(this.CreateDomainRepository(), this.orderAggregateFactory, this.applicationLogger);
                 ordersOrderFulfilledHandler.Handle(orderFulfilledV1);
-
-                // Task.Run(() => ordersOrderFulfilledHandler.Handle(orderFulfilledV1));
             }
             else if (message is IPaymentCompletedV1 paymentCompletedV1)
             {
                 IHandleMessage<IPaymentCompletedV1> fulfillmentPaymentCompletedHandler = new Fulfillment.MessageHandlers.PaymentCompletedV1Handler(this.CreateDomainRepository(), this.deliveryAggregateFactory, this.applicationLogger);
                 fulfillmentPaymentCompletedHandler.Handle(paymentCompletedV1);
-
-                // Task.Run(() => fulfillmentPaymentCompletedHandler.Handle(paymentCompletedV1));
+                Thread.Sleep(SleepTime);
                 IHandleMessage<IPaymentCompletedV1> ordersPaymentCompletedHandler = new Orders.MessageHandlers.PaymentCompletedV1Handler(this.CreateDomainRepository(), this.orderAggregateFactory, this.applicationLogger);
                 ordersPaymentCompletedHandler.Handle(paymentCompletedV1);
-
-                // Task.Run(() => ordersPaymentCompletedHandler.Handle(paymentCompletedV1));
             }
             else if (message is IOrderPlacedV1 orderPlacedV1)
             {
                 IHandleMessage<IOrderPlacedV1> handler = new Orders.MessageHandlers.OrderPlacedV1Handler(this.ordersDataStore, this.applicationLogger);
                 handler.Handle(orderPlacedV1);
-
-                // Task.Run(() => handler.Handle(orderPlacedV1));
             }
             else if (message is IDeliveryOptionsSubmittedV1 deliveryOptionsSubmittedV1)
             {
                 IHandleMessage<IDeliveryOptionsSubmittedV1> handler = new Fulfillment.MessageHandlers.DeliveryOptionsSubmittedV1Handler(this.deliveryOptionsDataStore, this.applicationLogger);
                 handler.Handle(deliveryOptionsSubmittedV1);
-
-                // Task.Run(() => handler.Handle(deliveryOptionsSubmittedV1));
             }
             else
             {
-                throw new NotSupportedException();
+                this.applicationLogger.Warn($"No handlers for message type '{message.GetType().Name}' (it may be an internal domain event).");
             }
         }
 
@@ -122,7 +116,7 @@
             }
             else
             {
-                throw new NotSupportedException();
+                throw new NotSupportedException($"No handlers configured for the command '{message.GetType().Name}'.");
             }
         }
 

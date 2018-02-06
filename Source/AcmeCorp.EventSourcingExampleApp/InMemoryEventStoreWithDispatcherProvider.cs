@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using System.Linq;
+    using System.Threading;
     using System.Threading.Tasks;
     using AcmeCorp.EventSourcing;
     using AcmeCorp.EventSourcing.Logging;
@@ -35,7 +36,8 @@
             foreach (EventStoreMessage eventStoreMessage in messages)
             {
                 this.applicationLogger.PublishMessage(eventStoreMessage.Body);
-                this.bus.Publish(eventStoreMessage.Body);
+                await Task.Run(() => this.bus.Publish(eventStoreMessage.Body)).ConfigureAwait(false);
+                Thread.Sleep(500);
             }
 
             return count;
