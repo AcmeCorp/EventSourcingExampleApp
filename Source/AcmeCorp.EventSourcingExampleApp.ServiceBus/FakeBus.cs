@@ -4,13 +4,17 @@
     using System.Threading;
     using AcmeCorp.EventSourcing;
     using AcmeCorp.EventSourcing.Logging;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Commands;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Events;
     using AcmeCorp.EventSourcingExampleApp.Fulfillment;
+    using AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts.Messages.Commands;
+    using AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts.Messages.Events;
     using AcmeCorp.EventSourcingExampleApp.Fulfillment.Domain;
     using AcmeCorp.EventSourcingExampleApp.Orders;
+    using AcmeCorp.EventSourcingExampleApp.Orders.Contracts.Messages.Commands;
+    using AcmeCorp.EventSourcingExampleApp.Orders.Contracts.Messages.Events;
     using AcmeCorp.EventSourcingExampleApp.Orders.Domain;
     using AcmeCorp.EventSourcingExampleApp.Payments;
+    using AcmeCorp.EventSourcingExampleApp.Payments.Contracts.Messages.Commands;
+    using AcmeCorp.EventSourcingExampleApp.Payments.Contracts.Messages.Events;
 
     /// <remarks>
     /// A fake service bus.

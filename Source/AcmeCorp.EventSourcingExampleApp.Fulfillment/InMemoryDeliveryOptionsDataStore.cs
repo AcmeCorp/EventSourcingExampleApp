@@ -1,7 +1,7 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Fulfillment
 {
     using System.Collections.Generic;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Dto;
+    using AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts.Dto;
 
     public class InMemoryDeliveryOptionsDataStore : IDeliveryOptionsDataStore
     {

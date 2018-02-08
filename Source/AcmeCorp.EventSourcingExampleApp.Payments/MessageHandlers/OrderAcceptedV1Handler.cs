@@ -1,7 +1,7 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Payments.MessageHandlers
 {
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Commands;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Events;
+    using AcmeCorp.EventSourcingExampleApp.Orders.Contracts.Messages.Events;
+    using AcmeCorp.EventSourcingExampleApp.Payments.Contracts.Messages.Commands;
 
     public class OrderAcceptedV1Handler : IHandleMessage<IOrderAcceptedV1>
     {

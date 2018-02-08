@@ -1,6 +1,6 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Payments
 {
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Dto;
+    using AcmeCorp.EventSourcingExampleApp.Payments.Contracts.Dto;
 
     public interface IPaymentsDataStore
     {

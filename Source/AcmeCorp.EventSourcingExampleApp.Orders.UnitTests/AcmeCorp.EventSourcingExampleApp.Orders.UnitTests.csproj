@@ -30,7 +30,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\EventSourcing\Source\AcmeCorp.EventSourcing.Testing\AcmeCorp.EventSourcing.Testing.csproj" />
     <ProjectReference Include="..\..\..\EventSourcing\Source\AcmeCorp.EventSourcing\AcmeCorp.EventSourcing.csproj" />
-    <ProjectReference Include="..\AcmeCorp.EventSourcingExampleApp.Contracts\AcmeCorp.EventSourcingExampleApp.Contracts.csproj" />
+    <ProjectReference Include="..\AcmeCorp.EventSourcingExampleApp.Orders.Contracts\AcmeCorp.EventSourcingExampleApp.Orders.Contracts.csproj" />
     <ProjectReference Include="..\AcmeCorp.EventSourcingExampleApp.Orders\AcmeCorp.EventSourcingExampleApp.Orders.csproj" />
     <ProjectReference Include="..\AcmeCorp.EventSourcingExampleApp\AcmeCorp.EventSourcingExampleApp.csproj" />
   </ItemGroup>

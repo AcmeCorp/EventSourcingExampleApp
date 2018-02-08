@@ -1,6 +1,6 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Orders.MessageHandlers
 {
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Events;
+    using AcmeCorp.EventSourcingExampleApp.Orders.Contracts.Messages.Events;
 
     public class OrderPlacedV1Handler : IHandleMessage<IOrderPlacedV1>
     {

@@ -1,6 +1,6 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Fulfillment.MessageHandlers
 {
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Events;
+    using AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts.Messages.Events;
 
     public class DeliveryOptionsSubmittedV1Handler : IHandleMessage<IDeliveryOptionsSubmittedV1>
     {

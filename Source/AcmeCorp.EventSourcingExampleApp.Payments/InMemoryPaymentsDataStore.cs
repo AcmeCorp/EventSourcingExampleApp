@@ -1,7 +1,7 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Payments
 {
     using System.Collections.Generic;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Dto;
+    using AcmeCorp.EventSourcingExampleApp.Payments.Contracts.Dto;
 
     public class InMemoryPaymentsDataStore : IPaymentsDataStore
     {

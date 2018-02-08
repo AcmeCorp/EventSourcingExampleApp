@@ -1,8 +1,8 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Payments.MessageHandlers
 {
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Dto;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Commands;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Events;
+    using AcmeCorp.EventSourcingExampleApp.Payments.Contracts.Dto;
+    using AcmeCorp.EventSourcingExampleApp.Payments.Contracts.Messages.Commands;
+    using AcmeCorp.EventSourcingExampleApp.Payments.Contracts.Messages.Events;
 
     public class ProcessPaymentV1Handler : IHandleMessage<ProcessPaymentV1>
     {

@@ -1,8 +1,8 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Fulfillment.Domain
 {
     using AcmeCorp.EventSourcing;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Dto;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Events;
+    using AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts.Dto;
+    using AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts.Messages.Events;
     using AcmeCorp.EventSourcingExampleApp.Fulfillment.Domain.Events;
 
     public class DeliveryAggregate :

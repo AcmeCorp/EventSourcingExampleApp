@@ -1,6 +1,6 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Payments.MessageHandlers
 {
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Commands;
+    using AcmeCorp.EventSourcingExampleApp.Payments.Contracts.Messages.Commands;
 
     public class SubmitPaymentDetailsV1Handler : IHandleMessage<SubmitPaymentDetailsV1>
     {

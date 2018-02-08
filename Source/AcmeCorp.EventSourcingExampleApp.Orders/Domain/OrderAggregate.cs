@@ -2,8 +2,8 @@
 {
     using AcmeCorp.EventSourcing;
     using AcmeCorp.EventSourcingExampleApp.Console.Messages.Domain.Events;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Dto;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Events;
+    using AcmeCorp.EventSourcingExampleApp.Orders.Contracts.Dto;
+    using AcmeCorp.EventSourcingExampleApp.Orders.Contracts.Messages.Events;
     using AcmeCorp.EventSourcingExampleApp.Orders.Domain.Events;
 
     public class OrderAggregate :

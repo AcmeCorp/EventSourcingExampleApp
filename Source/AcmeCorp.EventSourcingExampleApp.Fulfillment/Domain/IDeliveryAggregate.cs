@@ -1,7 +1,7 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Fulfillment.Domain
 {
     using AcmeCorp.EventSourcing;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Dto;
+    using AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts.Dto;
 
     public interface IDeliveryAggregate : IAggregate
     {

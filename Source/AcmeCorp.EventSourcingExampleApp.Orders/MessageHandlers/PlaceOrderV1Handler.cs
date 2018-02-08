@@ -1,7 +1,7 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Orders.MessageHandlers
 {
     using AcmeCorp.EventSourcing;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Commands;
+    using AcmeCorp.EventSourcingExampleApp.Orders.Contracts.Messages.Commands;
     using AcmeCorp.EventSourcingExampleApp.Orders.Domain;
 
     public class PlaceOrderV1Handler : IHandleMessage<PlaceOrderV1>

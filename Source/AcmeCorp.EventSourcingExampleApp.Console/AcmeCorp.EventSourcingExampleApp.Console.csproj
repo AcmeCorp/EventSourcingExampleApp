@@ -23,6 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts\AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts.csproj" />
+    <ProjectReference Include="..\AcmeCorp.EventSourcingExampleApp.Orders.Contracts\AcmeCorp.EventSourcingExampleApp.Orders.Contracts.csproj" />
+    <ProjectReference Include="..\AcmeCorp.EventSourcingExampleApp.Payments.Contracts\AcmeCorp.EventSourcingExampleApp.Payments.Contracts.csproj" />
     <ProjectReference Include="..\AcmeCorp.EventSourcingExampleApp.ServiceBus\AcmeCorp.EventSourcingExampleApp.ServiceBus.csproj" />
     <ProjectReference Include="..\AcmeCorp.EventSourcingExampleApp\AcmeCorp.EventSourcingExampleApp.csproj" />
   </ItemGroup>

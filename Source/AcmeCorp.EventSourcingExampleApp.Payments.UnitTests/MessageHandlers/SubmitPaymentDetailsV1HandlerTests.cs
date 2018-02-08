@@ -1,7 +1,7 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Payments.UnitTests.MessageHandlers
 {
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Dto;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Commands;
+    using AcmeCorp.EventSourcingExampleApp.Payments.Contracts.Dto;
+    using AcmeCorp.EventSourcingExampleApp.Payments.Contracts.Messages.Commands;
     using AcmeCorp.EventSourcingExampleApp.Payments.MessageHandlers;
     using Moq;
     using Xunit;

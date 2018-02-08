@@ -2,8 +2,8 @@
 {
     using System.Globalization;
     using AcmeCorp.EventSourcing.Testing;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Dto;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Events;
+    using AcmeCorp.EventSourcingExampleApp.Orders.Contracts.Dto;
+    using AcmeCorp.EventSourcingExampleApp.Orders.Contracts.Messages.Events;
     using AcmeCorp.EventSourcingExampleApp.Orders.Domain;
     using Xunit;
 

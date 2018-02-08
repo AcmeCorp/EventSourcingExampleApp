@@ -1,7 +1,7 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Orders
 {
     using System.Collections.Generic;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Dto;
+    using AcmeCorp.EventSourcingExampleApp.Orders.Contracts.Dto;
 
     public class InMemoryOrdersDataStore : IOrdersDataStore
     {

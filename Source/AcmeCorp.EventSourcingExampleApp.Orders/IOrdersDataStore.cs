@@ -1,6 +1,6 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Orders
 {
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Dto;
+    using AcmeCorp.EventSourcingExampleApp.Orders.Contracts.Dto;
 
     public interface IOrdersDataStore
     {

@@ -1,8 +1,8 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Orders.MessageHandlers
 {
     using AcmeCorp.EventSourcing;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Events;
     using AcmeCorp.EventSourcingExampleApp.Orders.Domain;
+    using AcmeCorp.EventSourcingExampleApp.Payments.Contracts.Messages.Events;
 
     public class PaymentCompletedV1Handler : IHandleMessage<IPaymentCompletedV1>
     {

@@ -1,6 +1,6 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Fulfillment
 {
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Dto;
+    using AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts.Dto;
 
     public interface IDeliveryOptionsDataStore
     {

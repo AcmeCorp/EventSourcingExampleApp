@@ -1,8 +1,10 @@
 ﻿namespace AcmeCorp.EventSourcingExampleApp.Console
 {
     using System;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Dto;
-    using AcmeCorp.EventSourcingExampleApp.Contracts.Messages.Commands;
+    using AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts.Messages.Commands;
+    using AcmeCorp.EventSourcingExampleApp.Orders.Contracts.Dto;
+    using AcmeCorp.EventSourcingExampleApp.Orders.Contracts.Messages.Commands;
+    using AcmeCorp.EventSourcingExampleApp.Payments.Contracts.Messages.Commands;
     using AcmeCorp.EventSourcingExampleApp.ServiceBus;
 
     public static class Program
