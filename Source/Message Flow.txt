@@ -1,0 +1,19 @@
+ - Orders
+	#0 - Place Order --> Order Placed
+	#0 - Order Placed --> [data stored]
+	#1 - Confirm Order --> Order Accepted
+	#5 - Payment Completed --> Ack
+	#8 - Order Fulfilled --> Ack
+	#9 - #5 & #8 --> Order Completed
+
+ - Payments
+	#0 - Submit Payment Details --> [data stored]
+	#2 - Order Accepted --> Process Payment
+	#3 - Process Payment --> Payment Completed
+
+ - Fulfillment
+	#0 - Submit Delivery Options --> Delivery Options Submitted
+	#0 - Delivery Options Submitted --> [data stored]
+	#4 - Order Accepted --> Ack
+	#6 - Payment Completed --> Ack
+	#7 - #4 & #6 --> Order Fulfilled

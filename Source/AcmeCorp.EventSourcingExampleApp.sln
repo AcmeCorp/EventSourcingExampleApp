@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		DotNetCoreLibrary.ruleset = DotNetCoreLibrary.ruleset
 		DotNetCoreTests.ruleset = DotNetCoreTests.ruleset
+		Message Flow.txt = Message Flow.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcmeCorp.EventSourcingExampleApp", "AcmeCorp.EventSourcingExampleApp\AcmeCorp.EventSourcingExampleApp.csproj", "{DE739BB4-261F-4E4E-A896-29C1253C82AF}"
@@ -35,11 +36,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcmeCorp.EventSourcing", ".
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcmeCorp.EventSourcing.Testing", "..\..\EventSourcing\Source\AcmeCorp.EventSourcing.Testing\AcmeCorp.EventSourcing.Testing.csproj", "{AC8FB505-9EEE-408A-AD35-80400FDFB323}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts", "AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts\AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts.csproj", "{3D45A62D-C0C0-43F8-95EF-58BD7181A03D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts", "AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts\AcmeCorp.EventSourcingExampleApp.Fulfillment.Contracts.csproj", "{3D45A62D-C0C0-43F8-95EF-58BD7181A03D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmeCorp.EventSourcingExampleApp.Orders.Contracts", "AcmeCorp.EventSourcingExampleApp.Orders.Contracts\AcmeCorp.EventSourcingExampleApp.Orders.Contracts.csproj", "{946C7D2C-9F6D-4DDA-A3C5-03AA257BA53C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcmeCorp.EventSourcingExampleApp.Orders.Contracts", "AcmeCorp.EventSourcingExampleApp.Orders.Contracts\AcmeCorp.EventSourcingExampleApp.Orders.Contracts.csproj", "{946C7D2C-9F6D-4DDA-A3C5-03AA257BA53C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmeCorp.EventSourcingExampleApp.Payments.Contracts", "AcmeCorp.EventSourcingExampleApp.Payments.Contracts\AcmeCorp.EventSourcingExampleApp.Payments.Contracts.csproj", "{AF42D48D-77C3-428F-AF18-D6F8C197BE7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcmeCorp.EventSourcingExampleApp.Payments.Contracts", "AcmeCorp.EventSourcingExampleApp.Payments.Contracts\AcmeCorp.EventSourcingExampleApp.Payments.Contracts.csproj", "{AF42D48D-77C3-428F-AF18-D6F8C197BE7B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FulFillment", "FulFillment", "{3868F641-D1EB-4E83-A663-0B14BEEBFDE8}"
 EndProject
